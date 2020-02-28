@@ -6,6 +6,12 @@
 
 body {
     background-color: #f1f1f1;
+    transition: background .3s linear;
+}
+
+body.dark {
+    background-color: #000;
+    color: #fff;
 }
 
 .toggle-content {
