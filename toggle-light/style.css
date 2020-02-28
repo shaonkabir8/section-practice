@@ -5,6 +5,15 @@
 }
 
 body {
+    background-color: #f1f1f1;
+}
+
+.toggle-content {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.toggle-item {
     height: 100vh;
     display: flex;
     justify-content: center;
