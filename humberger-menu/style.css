@@ -40,6 +40,7 @@ body {
 }
 .mainmenu ul li {
     display: inline-block;
+    position: relative;
 }
 .mainmenu ul li a {
     display: block;
@@ -53,4 +54,43 @@ body {
 .mainmenu ul li a:hover {
     background: #fff;
     color: #000;
+}
+
+/* Dropdown Menu Styles */
+
+.mainmenu ul li ul {
+    position: absolute;
+    left: -50px;
+    top: 80px;
+    width: 100%;
+    background: rgb(36, 35, 35);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.mainmenu ul li ul::before {
+    position: absolute;
+    content: '';
+    left: 37%;
+    top: -20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid rgb(36, 35, 35);;
+}
+
+.mainmenu ul li  ul li {
+    display: block;
+    border-bottom: .5px solid #ddd;
+}
+
+
+.mainmenu ul li:hover >  ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    left: 0;
 }
