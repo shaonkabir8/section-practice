@@ -53,8 +53,7 @@ body {
     text-decoration: none;
     transition: background .3s linear;
 }
-.mainmenu ul li a:hover ,
-.mobile-menu  li a:hover{
+.mainmenu ul li a:hover {
     background: #fff;
     color: #000;
 }
@@ -99,7 +98,7 @@ body {
 }
 
 
-/* Humberger Menu Styles */
+/* Humberger Icon Styles */
 .humberger-icon {
     width: 50px;
     height: 30px;
@@ -157,7 +156,23 @@ body {
 
 
 /* Mobile Menu Styles */
+/* Few Common reset css are written above */
 
-.mobile-menu li {
+.mobile-menu {
+    display: none;
+    background: #FF7012;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 58px;
+    text-align: center;
+    height: 100vh;
+}
+
+.mobile-menu li a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.mobile-menu.active {
     display: block;
 }
