@@ -159,14 +159,15 @@ body {
 /* Few Common reset css are written above */
 
 .mobile-menu {
-    display: none;
     background: #FF7012;
     position: fixed;
     width: 100%;
     left: 0;
-    top: 58px;
+    top: 0;
     text-align: center;
     height: 100vh;
+    transform: translateY(-100%);
+    transition: transform 0.3s cubic-bezier(1,0.5,0,1);
 }
 
 .mobile-menu li a:hover {
@@ -174,5 +175,6 @@ body {
 }
 
 .mobile-menu.active {
-    display: block;
+    top: 58px;
+    transform: translateY(0);
 }
