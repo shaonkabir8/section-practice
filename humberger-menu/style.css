@@ -9,3 +9,48 @@ body {
     line-height: 1.7;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.header-wrapper {
+    background: rgb(36, 35, 35);
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo h3 a {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    transition: opacity .2s linear;
+}
+.logo h3 a:hover {
+    opacity: .8;
+}
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainmenu ul li {
+    display: inline-block;
+}
+.mainmenu ul li a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background .3s linear;
+}
+.mainmenu ul li a:hover {
+    background: #fff;
+    color: #000;
+}
