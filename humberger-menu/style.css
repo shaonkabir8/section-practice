@@ -33,7 +33,8 @@ body {
 .logo h3 a:hover {
     opacity: .8;
 }
-.mainmenu ul {
+.mainmenu ul,
+.mobile-menu   {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -42,7 +43,8 @@ body {
     display: inline-block;
     position: relative;
 }
-.mainmenu ul li a {
+.mainmenu ul li a ,
+.mobile-menu  li a{
     display: block;
     color: #fff;
     padding: 15px;
@@ -51,7 +53,8 @@ body {
     text-decoration: none;
     transition: background .3s linear;
 }
-.mainmenu ul li a:hover {
+.mainmenu ul li a:hover ,
+.mobile-menu  li a:hover{
     background: #fff;
     color: #000;
 }
@@ -97,7 +100,7 @@ body {
 
 
 /* Humberger Menu Styles */
-.humberger-menu {
+.humberger-icon {
     width: 50px;
     height: 30px;
     position: relative;
@@ -107,7 +110,7 @@ body {
     margin-top: 10px;
 }
 
-.humberger-menu span {
+.humberger-icon span {
     display: block;
     position: absolute;
     height: 5px;
@@ -120,34 +123,41 @@ body {
     transition: .25s ease-in-out;
 }
 
-.humberger-menu span:nth-child(1) {
+.humberger-icon span:nth-child(1) {
     top: 0px;
     transform-origin: left center;
 }
 
-.humberger-menu span:nth-child(2) {
+.humberger-icon span:nth-child(2) {
     top: 13px;
     transform-origin: left center;
 }
 
-.humberger-menu span:nth-child(3) {
+.humberger-icon span:nth-child(3) {
     top: 27px;
     transform-origin: left center;
 }
 
-.humberger-menu.open span:nth-child(1) {
+.humberger-icon.open span:nth-child(1) {
     transform: rotate(45deg);
     top: -3px;
     left: 8px;
 }
 
-.humberger-menu.open span:nth-child(2) {
+.humberger-icon.open span:nth-child(2) {
     width: 0%;
     opacity: 0;
 }
 
-.humberger-menu.open span:nth-child(3) {
+.humberger-icon.open span:nth-child(3) {
     top: 33px;
     left: 8px;
     transform: rotate(-45deg);
+}
+
+
+/* Mobile Menu Styles */
+
+.mobile-menu li {
+    display: block;
 }
