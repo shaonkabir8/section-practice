@@ -12,5 +12,67 @@ body {
     font-size: 16px;
     line-height: 2;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: rgb(10, 25, 47);
 }
 
+.nav__list {
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+.nav__item{
+    list-style: none;
+    text-align: center;
+}
+
+.nav__link{
+    color: rgb(100, 255, 218);
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+
+
+.nav__item:hover .nav__link {
+    border-bottom: 1px solid ;
+}
+
+.nav__link:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+
+.nav__link:hover:before {
+    content: attr(data-text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 10px;
+    width: 1800px;
+    height: 1800px;
+}
